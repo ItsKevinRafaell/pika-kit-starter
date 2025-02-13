@@ -16,6 +16,7 @@ use Filament\Panel;
 use Filament\PanelProvider;
 use Filament\Support\Colors\Color;
 use Filament\Widgets;
+use Hasnayeen\Themes\Http\Middleware\SetTheme;
 use Hasnayeen\Themes\ThemesPlugin;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
@@ -29,6 +30,7 @@ use Jeffgreco13\FilamentBreezy\BreezyCore;
 use Joaopaulolndev\FilamentGeneralSettings\FilamentGeneralSettingsPlugin;
 use Laravel\Socialite\Contracts\User as SocialiteUserContract;
 use pxlrbt\FilamentSpotlight\SpotlightPlugin;
+use Rupadana\ApiService\ApiServicePlugin;
 use ShuvroRoy\FilamentSpatieLaravelHealth\FilamentSpatieLaravelHealthPlugin;
 
 class AdminPanelProvider extends PanelProvider
@@ -63,9 +65,12 @@ class AdminPanelProvider extends PanelProvider
                 SubstituteBindings::class,
                 DisableBladeIconComponents::class,
                 DispatchServingFilamentEvent::class,
+                SetTheme::class
             ])
             ->plugins([
                 SpotlightPlugin::make(),
+                ThemesPlugin::make(),
+                ApiServicePlugin::make(),
                 FilamentShieldPlugin::make(),
                 FilamentGeneralSettingsPlugin::make()
                     ->setIcon('heroicon-o-cog')
@@ -115,9 +120,9 @@ class AdminPanelProvider extends PanelProvider
                         requiresCurrentPassword: true, // when false, the user can update their password without entering their current password. (default = true)
                     )
                     ->avatarUploadComponent(fn($fileUpload) => $fileUpload->disableLabel())
-                    // ->enableTwoFactorAuthentication(
-                    //     force: true, // force the user to enable 2FA before they can use the application (default = false)
-                    // )
+                    ->enableTwoFactorAuthentication(
+                        force: true, // force the user to enable 2FA before they can use the application (default = false)
+                    )
             ])
             ->authMiddleware([
                 Authenticate::class,
