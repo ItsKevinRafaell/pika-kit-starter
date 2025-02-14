@@ -5,13 +5,16 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\UserResource\Pages;
 use App\Models\User;
 use Filament\Forms;
+use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Actions\DeleteAction;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Joshembling\ImageOptimizer\Components\SpatieMediaLibraryFileUpload;
 
 class UserResource extends Resource
 {
@@ -43,13 +46,18 @@ class UserResource extends Resource
                     ->maxLength(255)
                     ->visibleOn('create'),
 
-
                 Forms\Components\Select::make('roles')
-                    ->relationship('roles', 'name')
-                    ->multiple()
-                    ->required()
-                    ->preload()
-                    ->searchable(),
+                ->relationship('roles', 'name')
+                ->multiple()
+                ->required()
+                ->preload()
+                ->searchable(),
+
+                FileUpload::make('avatar_url')
+                    ->disk('public')
+                    ->label('Avatar')
+                    ->rules('image')
+                    ->avatar(),
             ]);
     }
 
@@ -68,6 +76,8 @@ class UserResource extends Resource
                 Tables\Columns\TextColumn::make('roles.name')
                     ->badge()
                     ->color('primary'),
+
+                ImageColumn::make('avatar_url'),
 
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()

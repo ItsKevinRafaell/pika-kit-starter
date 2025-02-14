@@ -120,8 +120,9 @@ class AdminPanelProvider extends PanelProvider
                         requiresCurrentPassword: true, // when false, the user can update their password without entering their current password. (default = true)
                     )
                     ->avatarUploadComponent(fn($fileUpload) => $fileUpload->disableLabel())
+                    // Comment : You can also use the following method to enable two-factor authentication
                     ->enableTwoFactorAuthentication(
-                        force: true, // force the user to enable 2FA before they can use the application (default = false)
+                        force: false,
                     )
             ])
             ->authMiddleware([

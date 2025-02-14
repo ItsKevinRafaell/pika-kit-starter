@@ -1,5 +1,7 @@
 # Pika Starter Kit
 
+Pika Starter Kit is an innovative solution designed to accelerate the application development process using Filament. With Pika Starter Kit, you can focus on developing features and innovations without getting bogged down in complex configurations.
+
 ## Installation Steps
 
 The following steps detail the installation process. Each step includes the command to execute and a detailed explanation.
@@ -19,6 +21,7 @@ The following steps detail the installation process. Each step includes the comm
     DB_DATABASE=your_database_name
     DB_USERNAME=your_database_username
     DB_PASSWORD=your_database_password
+
     APP_URL=http://your-app-url.com
     APP_KEY=base64:some_random_string #This will be generated later
     ```
@@ -26,7 +29,7 @@ The following steps detail the installation process. Each step includes the comm
 2.  **Install Dependencies:**
 
     ```bash
-    composer install --no-interaction --optimize-autoloader
+    composer install
     ```
 
 3.  **Run Database Migrations:**
@@ -53,7 +56,7 @@ The following steps detail the installation process. Each step includes the comm
     php artisan make:filament-user
     ```
 
-    This command creates a new Filament user. You will be prompted to enter the necessary details for the superadmin account (for example). This user will have full access to the application..
+    This command creates a new Filament user. You will be prompted to enter the necessary details for the superadmin account. This user will have full access to the application..
 
 7.  **Generate Shield Permissions:**
 
@@ -80,3 +83,16 @@ The following steps detail the installation process. Each step includes the comm
     ```bash
     php artisan key:generate
     ```
+
+# Plugin
+
+| Plugin Name        | URL                                                                                                                                |
+| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Filament Breezy    | [https://filamentphp.com/plugins/jeffgreco-breezy](https://filamentphp.com/plugins/jeffgreco-breezy)                               |
+| Shield             | [https://filamentphp.com/plugins/bezhansalleh-shield](https://filamentphp.com/plugins/bezhansalleh-shield)                         |
+| Spatie Health      | [https://filamentphp.com/plugins/shuvroroy-spatie-laravel-health](https://filamentphp.com/plugins/shuvroroy-spatie-laravel-health) |
+| Themes             | [https://filamentphp.com/plugins/hasnayeen-themes](https://filamentphp.com/plugins/hasnayeen-themes)                               |
+| API Service        | [https://filamentphp.com/plugins/rupadana-api-service](https://filamentphp.com/plugins/rupadana-api-service)                       |
+| Filament Socialite | [https://filamentphp.com/plugins/dododedodonl-socialite](https://filamentphp.com/plugins/dododedodonl-socialite)                   |
+| Spotlight          | [https://filamentphp.com/plugins/pxlrbt-spotlight](https://filamentphp.com/plugins/pxlrbt-spotlight)                               |
+| General Setting    | [https://filamentphp.com/plugins/joaopaulolndev-general-settings](https://filamentphp.com/plugins/joaopaulolndev-general-settings) |
