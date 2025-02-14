@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>{{ config('app.name', 'Pika Starter Kit') }}</title>
-        <link rel="icon" href="{{asset(config('app.logo'))}}">
-
+        <link rel="icon" href="{{asset(config('app.favicon'))}}" type="image/x-icon" />
+        {{ dd(asset(config('app.logo'))) }}
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 

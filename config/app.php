@@ -124,4 +124,5 @@ return [
     ],
 
     'logo' => env('APP_LOGO', 'assets/site_logo.png'),
+    'favicon' => env('APP_FAVICON', 'assets/site_favicon.ico'),
 ];
