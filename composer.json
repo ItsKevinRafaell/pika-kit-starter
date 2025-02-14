@@ -11,15 +11,15 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/ItsKevinRafaell/pika-kit-starter-filament-spatie-laravel-health"
+            "url": "https://github.com/ItsKevinRafaell/pika-starter-kit-filament-spatie-laravel-health"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/ItsKevinRafaell/pika-kit-starter-filament-shield"
+            "url": "https://github.com/ItsKevinRafaell/pika-starter-kit-filament-shield"
         },
         {
             "type": "vcs",
-            "url": "https://github.com/ItsKevinRafaell/pika-kit-starter-filament-general-settings"
+            "url": "https://github.com/ItsKevinRafaell/pika-starter-kit-filament-general-settings"
         }
     ],
     "require": {

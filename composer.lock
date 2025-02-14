@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "de945960e38d244493e4aecefa05d5a6",
+    "content-hash": "9ac5e58d5e7240dbe048b3d1d40555fa",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -131,12 +131,12 @@
             "version": "dev-custom-configuration",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ItsKevinRafaell/pika-kit-starter-filament-shield.git",
+                "url": "https://github.com/ItsKevinRafaell/pika-starter-kit-filament-shield.git",
                 "reference": "65febb3320694c3b7a54ca223ccc12ff5ec609f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ItsKevinRafaell/pika-kit-starter-filament-shield/zipball/65febb3320694c3b7a54ca223ccc12ff5ec609f9",
+                "url": "https://api.github.com/repos/ItsKevinRafaell/pika-starter-kit-filament-shield/zipball/65febb3320694c3b7a54ca223ccc12ff5ec609f9",
                 "reference": "65febb3320694c3b7a54ca223ccc12ff5ec609f9",
                 "shasum": ""
             },
@@ -223,7 +223,7 @@
                 "security"
             ],
             "support": {
-                "source": "https://github.com/ItsKevinRafaell/pika-kit-starter-filament-shield/tree/custom-configuration"
+                "source": "https://github.com/ItsKevinRafaell/pika-starter-kit-filament-shield/tree/custom-configuration"
             },
             "funding": [
                 {
@@ -2637,13 +2637,13 @@
             "version": "dev-custom-form",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ItsKevinRafaell/pika-kit-starter-filament-general-settings.git",
-                "reference": "94810b7cdf53fcbbcbc4e494cc1cd9ecc3e1404e"
+                "url": "https://github.com/ItsKevinRafaell/pika-starter-kit-filament-general-settings.git",
+                "reference": "1ea6a09f0eef2c7f2f8c128a05cb929b98acddb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ItsKevinRafaell/pika-kit-starter-filament-general-settings/zipball/94810b7cdf53fcbbcbc4e494cc1cd9ecc3e1404e",
-                "reference": "94810b7cdf53fcbbcbc4e494cc1cd9ecc3e1404e",
+                "url": "https://api.github.com/repos/ItsKevinRafaell/pika-starter-kit-filament-general-settings/zipball/1ea6a09f0eef2c7f2f8c128a05cb929b98acddb0",
+                "reference": "1ea6a09f0eef2c7f2f8c128a05cb929b98acddb0",
                 "shasum": ""
             },
             "require": {
@@ -2730,7 +2730,7 @@
                     "url": "https://github.com/joaopaulolndev"
                 }
             ],
-            "time": "2025-02-14T06:51:55+00:00"
+            "time": "2025-02-14T07:40:09+00:00"
         },
         {
             "name": "joshembling/image-optimizer",
@@ -6379,12 +6379,12 @@
             "version": "dev-custom-configuration",
             "source": {
                 "type": "git",
-                "url": "https://github.com/ItsKevinRafaell/pika-kit-starter-filament-spatie-laravel-health.git",
+                "url": "https://github.com/ItsKevinRafaell/pika-starter-kit-filament-spatie-laravel-health.git",
                 "reference": "70f4e19a0ab2a7e9e2c97604e837b8e4367cdbed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ItsKevinRafaell/pika-kit-starter-filament-spatie-laravel-health/zipball/70f4e19a0ab2a7e9e2c97604e837b8e4367cdbed",
+                "url": "https://api.github.com/repos/ItsKevinRafaell/pika-starter-kit-filament-spatie-laravel-health/zipball/70f4e19a0ab2a7e9e2c97604e837b8e4367cdbed",
                 "reference": "70f4e19a0ab2a7e9e2c97604e837b8e4367cdbed",
                 "shasum": ""
             },
@@ -6453,7 +6453,7 @@
                 "laravel-health"
             ],
             "support": {
-                "source": "https://github.com/ItsKevinRafaell/pika-kit-starter-filament-spatie-laravel-health/tree/custom-configuration"
+                "source": "https://github.com/ItsKevinRafaell/pika-starter-kit-filament-spatie-laravel-health/tree/custom-configuration"
             },
             "funding": [
                 {

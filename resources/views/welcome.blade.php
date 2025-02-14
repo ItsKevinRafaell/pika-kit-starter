@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{ config('app.name', 'PikaKit Starter') }}</title>
+        <title>{{ config('app.name', 'Pika Starter Kit') }}</title>
         <link rel="icon" href="{{asset(config('app.logo'))}}">
 
         <!-- CSRF Token -->
