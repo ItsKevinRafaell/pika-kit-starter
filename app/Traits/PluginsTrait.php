@@ -34,12 +34,16 @@ trait PluginsTrait
                 ThemesPlugin::make(),
                 ApiServicePlugin::make(),
                 FilamentShieldPlugin::make(),
+                SpotlightPlugin::make(),
+                FilamentShieldPlugin::make(),
                 FilamentGeneralSettingsPlugin::make()
+                    ->canAccess(fn () => auth()->check() && auth()->user()->hasRole('super_admin'))
                     ->setIcon('heroicon-o-cog')
                     ->setNavigationGroup('Core')
                     ->setTitle('General Settings')
                     ->setNavigationLabel('General Settings'),
-                FilamentSpatieLaravelHealthPlugin::make(),
+                FilamentSpatieLaravelHealthPlugin::make()
+                    ->authorize(fn () : bool => auth()->check() && auth()->user()->hasRole('super_admin')),
                 FilamentSocialitePlugin::make()
                     ->providers([
                         Provider::make('google')
@@ -98,8 +102,8 @@ trait PluginsTrait
     protected function registerMethod(Panel $panel): void
     {
         $panel = $panel
-                    ->login()
-                    ->favicon(asset(config('app.favicon')));
+                ->login()
+                ->favicon(asset(config('app.favicon')));
     }
 
 
