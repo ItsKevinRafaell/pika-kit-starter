@@ -68,7 +68,7 @@ trait PluginsTrait
                         ])
                         ->registration(false)
                         ->registration(fn (string $provider, SocialiteUserContract $oauthUser, ?Authenticatable $user) => (bool) $user)
-                        ->slug('admin'),
+                        ->slug($panel->getId()),
                 BreezyCore::make()
                     ->myProfile(
                         shouldRegisterUserMenu: true, // Sets the 'account' link in the panel User Menu (default = true)
