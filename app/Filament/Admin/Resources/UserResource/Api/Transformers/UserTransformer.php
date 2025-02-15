@@ -1,5 +1,5 @@
 <?php
-namespace App\Filament\Resources\UserResource\Api\Transformers;
+namespace App\Filament\Admin\Resources\UserResource\Api\Transformers;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 use App\Models\User;

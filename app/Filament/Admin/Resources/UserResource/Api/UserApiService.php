@@ -1,8 +1,8 @@
 <?php
-namespace App\Filament\Resources\UserResource\Api;
+namespace App\Filament\Admin\Resources\UserResource\Api;
 
 use Rupadana\ApiService\ApiService;
-use App\Filament\Resources\UserResource;
+use App\Filament\Admin\Resources\UserResource;
 use Illuminate\Routing\Router;
 
 

@@ -1,10 +1,10 @@
 <?php
-namespace App\Filament\Resources\UserResource\Api\Handlers;
+namespace App\Filament\Admin\Resources\UserResource\Api\Handlers;
 
 use Illuminate\Http\Request;
 use Rupadana\ApiService\Http\Handlers;
-use App\Filament\Resources\UserResource;
-use App\Filament\Resources\UserResource\Api\Requests\CreateUserRequest;
+use App\Filament\Admin\Resources\UserResource;
+use App\Filament\Admin\Resources\UserResource\Api\Requests\CreateUserRequest;
 
 class CreateHandler extends Handlers {
     public static string | null $uri = '/';

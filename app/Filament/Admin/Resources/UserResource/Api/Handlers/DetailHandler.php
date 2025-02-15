@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Filament\Resources\UserResource\Api\Handlers;
+namespace App\Filament\Admin\Resources\UserResource\Api\Handlers;
 
 use App\Filament\Resources\SettingResource;
-use App\Filament\Resources\UserResource;
+use App\Filament\Admin\Resources\UserResource;
 use Rupadana\ApiService\Http\Handlers;
 use Spatie\QueryBuilder\QueryBuilder;
 use Illuminate\Http\Request;
-use App\Filament\Resources\UserResource\Api\Transformers\UserTransformer;
+use App\Filament\Admin\Resources\UserResource\Api\Transformers\UserTransformer;
 
 class DetailHandler extends Handlers
 {

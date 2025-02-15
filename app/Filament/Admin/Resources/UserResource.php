@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Filament\Resources;
+namespace App\Filament\Admin\Resources;
 
+use App\Filament\Admin\Resources\UserResource\Pages\ListUsers;
 use App\Filament\Resources\UserResource\Pages;
 use App\Models\User;
 use Filament\Forms;
@@ -14,7 +15,6 @@ use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use Joshembling\ImageOptimizer\Components\SpatieMediaLibraryFileUpload;
 
 class UserResource extends Resource
 {
@@ -117,7 +117,7 @@ class UserResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListUsers::route('/'),
+            'index' => ListUsers::route('/'),
             // Comment : This will turn page into modal
             // 'create' => Pages\CreateUser::route('/create'),
             // 'edit' => Pages\EditUser::route('/{record}/edit'),

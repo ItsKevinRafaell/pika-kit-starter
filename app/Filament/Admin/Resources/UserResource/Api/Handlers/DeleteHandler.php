@@ -1,32 +1,30 @@
 <?php
-namespace App\Filament\Resources\UserResource\Api\Handlers;
+namespace App\Filament\Admin\Resources\UserResource\Api\Handlers;
 
 use Illuminate\Http\Request;
 use Rupadana\ApiService\Http\Handlers;
-use App\Filament\Resources\UserResource;
-use App\Filament\Resources\UserResource\Api\Requests\UpdateUserRequest;
+use App\Filament\Admin\Resources\UserResource;
 
-class UpdateHandler extends Handlers {
+class DeleteHandler extends Handlers {
     public static string | null $uri = '/{id}';
     public static string | null $resource = UserResource::class;
 
     public static function getMethod()
     {
-        return Handlers::PUT;
+        return Handlers::DELETE;
     }
 
     public static function getModel() {
         return static::$resource::getModel();
     }
 
-
     /**
-     * Update User
+     * Delete User
      *
-     * @param UpdateUserRequest $request
+     * @param Request $request
      * @return \Illuminate\Http\JsonResponse
      */
-    public function handler(UpdateUserRequest $request)
+    public function handler(Request $request)
     {
         $id = $request->route('id');
 
@@ -34,10 +32,8 @@ class UpdateHandler extends Handlers {
 
         if (!$model) return static::sendNotFoundResponse();
 
-        $model->fill($request->all());
+        $model->delete();
 
-        $model->save();
-
-        return static::sendSuccessResponse($model, "Successfully Update Resource");
+        return static::sendSuccessResponse($model, "Successfully Delete Resource");
     }
 }
